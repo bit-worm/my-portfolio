@@ -1,3 +1,11 @@
 h1 {
   text-align: center;
 }
+
+img {
+  width: 25%;
+  height: auto;
+  display: block;
+  border-radius: 75px;
+  margin: auto;
+}
