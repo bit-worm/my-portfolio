@@ -1,8 +1,66 @@
+body {
+  margin: 0px; /*prevent overflows */
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: grey;
+  display: flex;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 2px 0;
+}
+
+#nav-image {
+  width: 30px;
+  height: auto;
+  border-radius: 120px;
+  margin: 3px 0;
+  border: 2px solid #5EA2EB;
+  display: inline-block;
+  /*vertical-align: bottom;*/
+}
+
+.navigation {
+  display: flex;
+  padding: 1px;
+}
+
+.nav-list {
+  display: flex;
+  /*border: 2px solid black;*/
+  list-style-type: none; /* to remove the bullets */
+  /* to remove browser default setting */
+  margin: 0px;
+  padding: 0px;
+}
+
+nav a {
+  margin: 3px;
+  border-left: 2px solid black;
+}
+
+.nav-list a:hover {
+  background-color: green;
+}
+.nav-list a:active {
+  background-color: yellow;
+}
+
+main {
+  margin-top: 80px;
+}
+
 h1 {
   text-align: center;
 }
 
-img {
+#me {
   width: 20%;
   height: auto;
   display: block;
