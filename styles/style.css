@@ -6,9 +6,10 @@ a {
   text-decoration: none;
 }
 
+
 header {
   background-color: grey;
-  display: flex;
+/*  display: flex;*/
   position: fixed;
   top: 0px;
   left: 0px;
@@ -26,30 +27,56 @@ header {
   /*vertical-align: bottom;*/
 }
 
-.navigation {
-  display: flex;
-  padding: 1px;
+.top-nav {
+/*  background-color: grey;*/
+  overflow: hidden;
+  display: inline;
 }
 
-.nav-list {
-  display: flex;
-  /*border: 2px solid black;*/
-  list-style-type: none; /* to remove the bullets */
-  /* to remove browser default setting */
-  margin: 0px;
-  padding: 0px;
+.top-nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: color 0.3s ease;
+  margin: 0rem;
 }
 
-nav a {
-  margin: 3px;
-  border-left: 2px solid black;
-}
-
-.nav-list a:hover {
+.top-nav a:hover {
   background-color: green;
 }
-.nav-list a:active {
+.top-nav a:active {
   background-color: yellow;
+}
+
+.top-right {
+  float: right;
+}
+
+.top-right ul {
+  list-style-type: none;
+  display: flex;
+}
+
+/* Toggle button styles */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.nav-toggle span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: all 0.3s ease;
 }
 
 main {
@@ -66,4 +93,55 @@ h1 {
   display: block;
   border-radius: 130px;
   margin: auto;
+}
+
+/* responsive design */
+@media screen and (max-width: 425px){
+  .top-nav {
+    display: flex;
+  }
+  .nav-toggle {
+    display: block;
+  }
+  .top-right ul {
+    position: fixed;
+    top: 60px;
+    right: -290px;
+    background-color: grey;
+    padding: 1rem;
+    width: 250px;
+    transition: right 0.5s ease;
+    z-index: 1000;
+    flex-direction: column;
+    align-items: center;
+  }
+  .top-nav ul.show {
+    right: 0;
+  }
+  .top-right ul li {
+    margin-bottom: 0.5rem;
+  }
+  .top-right ul li a {
+    margin: 0;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+/* Toggle button animation */
+.nav-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.nav-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+.nav-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
 }
