@@ -15,6 +15,7 @@ header {
   left: 0px;
   right: 0px;
   padding: 2px 0;
+  max-height: 60px;
 }
 
 #nav-image {
