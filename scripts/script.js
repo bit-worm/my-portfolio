@@ -54,3 +54,47 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('section').forEach((section) => {
     observer.observe(section);
 });
+
+// when the user scrolls, the header changes from floating
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  const header = document.querySelector("header");
+  const topRight = document.getElementById("topRight");
+  const topNav = document.getElementById("topNav");
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    header.style.top = "0px";
+    header.style.left = "0px";
+    header.style.right = "0px";
+    header.style.borderBottomRightRadius = "10px";
+    header.style.borderBottomLeftRadius = "10px";
+    header.style.borderTopRightRadius = "0px";
+    header.style.borderTopLeftRadius = "0px";
+      if (window.matchMedia("(max-width: 505px)").matches) {
+        //topRight.style.top = "100px";
+        //topRight.style.right = "10px";
+        topRight.classList.remove("top-right");
+        topNav.classList.remove("top-nav");
+        topRight.classList.add("top-right-scrolled");
+        topNav.classList.add("top-nav-scrolled");
+      }else {
+        topRight.classList.remove("top-right-scrolled");
+        topNav.classList.remove("top-nav-scrolled");
+        topRight.classList.add("top-right");
+        topNav.classList.add("top-nav");
+      }
+  } else {
+    header.style.top = "20px";
+    header.style.left = "10px";
+    header.style.right = "10px";
+    header.style.borderRadius = "10px";
+      if (window.matchMedia("(max-width: 505px)").matches) {
+        //topRight.style.top = "100px";
+        //topRight.style.right = "10px";
+        topRight.classList.remove("top-right-scrolled");
+        topNav.classList.remove("top-nav-scrolled");
+        topRight.classList.add("top-right");
+        topNav.classList.add("top-nav");
+      }
+  }
+}

@@ -11,11 +11,13 @@ header {
   background-color: grey;
 /*  display: flex;*/
   position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
   padding: 2px 0;
   max-height: 60px;
+  border-radius: 10px;
+  transition: 0.7s ease;
 }
 
 #nav-image {
@@ -48,15 +50,19 @@ header {
   max-height: 16px;
 }
 
-.top-nav a:hover {
+.top-right a:hover {
   background-color: green;
 }
-.top-nav a:active {
+.top-right a:active {
   background-color: yellow;
 }
 
 .top-right {
   float: right;
+}
+
+.top-right a{
+  border-radius: 20px;
 }
 
 .top-right ul {
@@ -84,7 +90,7 @@ header {
 }
 
 main {
-  margin-top: 80px;
+  margin-top: 100px; /* to account for the position of the header */
 }
 
 h1 {
@@ -95,19 +101,70 @@ h1 {
   width: 20%;
   height: auto;
   display: block;
-  border-radius: 130px;
+  border-radius: 35px;
   margin: auto;
+  border: 3px solid darkgray;
 }
 
 /* responsive design */
-@media screen and (max-width: 425px){
+@media screen and (max-width: 505px){
+  .top-nav-scrolled {
+  /*  background-color: grey;*/
+    overflow: hidden;
+    display: inline;
+  }
+  .top-nav-scrolled a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: color 0.3s ease;
+    margin: 0rem;
+    font-size: 20px;
+    font-weight: bold;
+    max-height: 16px;
+  }
+  .top-right-scrolled a:hover {
+    background-color: green;
+  }
+  .top-right-scrolled a:active {
+    background-color: yellow;
+  }
+
+  .top-right-scrolled {
+    float: right;
+  }
+
+  .top-right-scrolled a{
+    border-radius: 20px;
+  }
   .top-nav {
+    display: flex;
+  }
+  .top-nav-scrolled {
     display: flex;
   }
   .nav-toggle {
     display: block;
   }
   .top-right ul {
+    position: fixed;
+    min-height: 150px;
+    top: 60px;
+    right: -290px;
+    background-color: grey;
+    padding: 1rem;
+    width: 250px;
+    transition: right 0.5s ease;
+    z-index: 1000;
+    flex-direction: column;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .top-right-scrolled ul {
     position: fixed;
     min-height: 150px;
     top: 40px;
@@ -119,17 +176,33 @@ h1 {
     z-index: 1000;
     flex-direction: column;
     align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 0px;
+    list-style-type: none;
+    display: flex;
   }
   .top-nav ul.show {
+    right: 10px;
+  }
+  .top-nav-scrolled ul.show {
     right: 0;
   }
   .top-right ul li {
     margin-bottom: 0.5rem;
   }
+  .top-right-scrolled ul li {
+    margin-bottom: 0.5rem;
+  }
   .top-right ul li a {
     margin: 0;
   }
+  .top-right-scrolled ul li a {
+    margin: 0;
+  }
   .top-nav a {
+    max-height: 35px;
+  }
+  .top-nav-scrolled a {
     max-height: 35px;
   }
 }
