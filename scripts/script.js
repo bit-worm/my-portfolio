@@ -62,7 +62,7 @@ function scrollFunction() {
   const header = document.querySelector("header");
   const topRight = document.getElementById("topRight");
   const topNav = document.getElementById("topNav");
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
     header.style.top = "0px";
     header.style.left = "0px";
     header.style.right = "0px";
@@ -84,7 +84,7 @@ function scrollFunction() {
         topNav.classList.add("top-nav");
       }
   } else {
-    header.style.top = "20px";
+    header.style.top = "15px";
     header.style.left = "10px";
     header.style.right = "10px";
     header.style.borderRadius = "10px";

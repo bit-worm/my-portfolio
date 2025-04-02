@@ -11,7 +11,7 @@ header {
   background-color: grey;
 /*  display: flex;*/
   position: fixed;
-  top: 20px;
+  top: 15px;
   left: 10px;
   right: 10px;
   padding: 2px 0;
@@ -205,6 +205,7 @@ h1 {
   .top-nav-scrolled a {
     max-height: 35px;
   }
+
 }
 
 /* Animations */
