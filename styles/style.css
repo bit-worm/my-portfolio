@@ -1,3 +1,7 @@
+html {
+  background-color: #ced4da;
+}
+
 body {
   margin: 0px; /*prevent overflows */
 }
@@ -7,9 +11,8 @@ a {
 }
 
 
+
 header {
-  background-color: grey;
-/*  display: flex;*/
   position: fixed;
   top: 15px;
   left: 10px;
@@ -17,7 +20,7 @@ header {
   padding: 2px 0;
   max-height: 60px;
   border-radius: 10px;
-  transition: 0.7s ease;
+  transition: all 0.7s ease;
 }
 
 #nav-image {
@@ -50,11 +53,16 @@ header {
   max-height: 16px;
 }
 
+.top-right a {
+  background-color: #8e9aaf;
+  margin: 2px;
+}
+
 .top-right a:hover {
-  background-color: green;
+  background-color: #219ebc;
 }
 .top-right a:active {
-  background-color: yellow;
+  background-color: #14213d;
 }
 
 .top-right {
@@ -84,26 +92,229 @@ header {
     display: block;
     width: 30px;
     height: 3px;
-    background-color: #fff;
+    background-color: #004e98;
     margin: 5px 0;
     transition: all 0.3s ease;
 }
 
 main {
   margin-top: 100px; /* to account for the position of the header */
+  padding: 5px;
 }
 
 h1 {
   text-align: center;
+  color: #615442;
+  font-size: 50px;
+  font-family: Verdana, sans-serif;
+  font-style: italic;
+}
+
+/* about me section */
+.intro {
+  /*background-color: #c9a6c3;*/
+  padding: 15px;
+  overflow: hidden;
+  margin: 10px;
+  border-radius: 5px;
+  background-image: url("../images/cool-background-css-gradient.png");
+}
+.intro-left {
+  float: left;
+  width: 60%;
+}
+.intro-right {
+  float: right;
+  width: 40%;
+}
+
+.intro p {
+  font-size: 20px;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+#myIntro {
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
 }
 
 #me {
-  width: 20%;
+  max-width: 300px;
   height: auto;
-  display: block;
+  display: flex;
   border-radius: 35px;
   margin: auto;
   border: 3px solid darkgray;
+  box-shadow: 5px 5px 100px #A66CFF;
+}
+
+#contactInfoLinksTop{
+  list-style-type: none;
+  display: flex;
+  text-align: center;
+}
+
+#contactInfoLinks img,
+#contactInfoLinksTop img {
+  width: 25px;
+  height: auto;
+  display: flex;
+  margin: 5px;
+}
+
+
+/* hard-skills part */
+
+.skills h2 {
+  background-color: #FFF7D1;
+  text-align: center;
+  border: 3px solid #27391C;
+  border-radius: 20px;
+  max-width: 110px;
+  padding: 5px;
+  margin: auto;
+  margin-bottom: 4px;
+  box-shadow: 5px 5px 100px #8B5DFF;
+  font-family: 'Courier New', monospace;
+}
+
+.skills hr {
+  border: 5px solid #FFB200;
+}
+
+.skills {
+  padding: 5px;
+  background-image: url(../images/cool-background.png);
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.hard-skills {
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  column-count: 2;
+}
+.skills h4 {
+  text-align: center;
+  font-family: 'Courier New', monospace;
+  font-size: 20px;
+}
+
+.technical-skills {
+  display: inline;
+}
+.technical-skills h5 {
+  text-align: center;
+  font-family: 'Courier New', monospace;
+  font-size: 20px;
+}
+.technical-skills ul {
+  list-style-type: none;
+  margin: auto;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+}
+.technical-skills li {
+  border-radius: 20px;
+  background-color: #c9a6c3;
+  margin: auto;
+  margin-left: 2px;
+  padding: 15px;
+  box-shadow: 5px 5px 50px #A66CFF;
+}
+
+.technical-skills img {
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin: auto;
+  border-radius: 100px;
+}
+
+
+.tech-stack {
+  display: inline;
+  overflow: none;
+}
+.tech-stack h5 {
+  text-align: center;
+  font-family: 'Courier New', monospace;
+  font-size: 20px;
+}
+.tech-stack ul {
+  list-style-type: none;
+  margin: auto;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+.tech-stack li {
+  border-radius: 20px;
+  background-color: #c9a6c3;
+  margin: auto;
+  margin-left: 2px;
+  padding: 15px;
+  box-shadow: 5px 5px 50px #A66CFF;
+}
+
+.tech-stack img {
+  max-width: 250px;
+  height: auto;
+  margin: auto;
+  display: block;
+  border-radius: 60px;
+}
+/* hard-skills part */
+
+/* soft-skills part */
+
+.soft-skills h4 {
+  text-align: center;
+  font-family: 'Courier New', monospace;
+  font-size: 20px;
+}
+.soft-skills {
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  column-count: 2;
+}
+
+.weakness,
+.strengths {
+  background-color: #003285;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.strengths li,
+.weakness li {
+  margin: 8px;
+}
+
+/* soft-skills part */
+
+/* education part */
+/* education part */
+
+/* about me section */
+
+
+#contactInfoLinks {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+#contactInfoLinks img {
+  display: inline;
+  vertical-align: middle; /* keeps the icons and txt in same level*/
 }
 
 /* responsive design */
@@ -127,10 +338,10 @@ h1 {
     max-height: 16px;
   }
   .top-right-scrolled a:hover {
-    background-color: green;
+    background-color: #219ebc;
   }
   .top-right-scrolled a:active {
-    background-color: yellow;
+    background-color: #14213d;
   }
 
   .top-right-scrolled {
@@ -154,7 +365,7 @@ h1 {
     min-height: 150px;
     top: 60px;
     right: -290px;
-    background-color: grey;
+    background-color: #ced4da;
     padding: 1rem;
     width: 250px;
     transition: right 0.5s ease;
@@ -169,7 +380,7 @@ h1 {
     min-height: 150px;
     top: 40px;
     right: -290px;
-    background-color: grey;
+    background-color: #8e9aaf;
     padding: 1rem;
     width: 250px;
     transition: right 0.5s ease;
@@ -208,6 +419,60 @@ h1 {
 
 }
 
+@media screen and (max-width: 744px){
+  .hard-skills {
+    column-count: 0;
+    display: inline;
+  }
+  .tech-stack img,
+  .technical-skills img {
+    max-width: 50%;
+  }
+
+}
+@media screen and (max-width: 436px) {
+  .tech-stack ul {
+    list-style-type: none;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+  }
+  .tech-stack img,
+  .technical-skills img {
+    max-width: 70%;
+  }
+}
+@media screen and (max-width: 349px) {
+  .technical-skills ul {
+    list-style-type: none;
+    margin: auto;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
+  }
+
+  .tech-stack ul {
+    list-style-type: none;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
+  }
+
+}
+
+@media screen and (max-width: 605px) {
+  .soft-skills {
+    display: inline;
+    column-count: 0;
+  }
+}
+
+
 /* Animations */
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -226,4 +491,15 @@ h1 {
 }
 .nav-toggle.active span:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* myIntro glowing effect*/
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 2px #fff, 0 0 5px #ff4da6, 0 0 18px #ff4da6, 0 0 21px #ff4da6, 0 0 24px #ff4da6, 0 0 27px #ff4da6, 0 0 20px #ff4da6;
+  }
 }

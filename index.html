@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Boniface Sitati</title>
   <link rel="stylesheet" href="styles/style.css">
-  <link rel="icon" type="image/x-icon" href="images/man_4140048.png">
+  <link rel="icon" type="image/x-icon" href="icons/man_4140048.png">
 </head>
   <body>
     <header id="header">
@@ -28,27 +28,39 @@
     <main>
       <section id="about-me">
         <h1>Boniface Sitati</h1>
-        <p>I am a ... <br>I have always had my heart set on technology, always facinated by how wonderful machines work and how magical applications are. Having a career in tech is a dream come true for me, and I will utilize any chance given to me very well.</p>
-        <ul id="contactInfoLinksTop">
-          <li><a href="https://github.com/bit-worm">GitHub</a></li>
-          <li><a href="https://x.com/bit_worm_">X(twitter)</a></li>
-          <li><a href="https://www.linkedin.com/in/boniface-sitati-z11">LinkedIn</a></li>
-          <li><a href="https://wa.me/+254707592157">WhatsApp</a></li>
-          <li><a href="mailto:bonifacewafula005@gmail.com">bonifacewafula005@gmail.com</a></li>
-        </ul>
-        <img id="me" src="images/dp.jpg" alt="dp">
-        <div class="skills">
-          <div class="hard-skills">
-            <h4>Hard skills</h4>
-            <ul id="hardSkillsList">
-              <li>Programming</li>
-              <li>Bug hunting</li>
-              <li>FullStack Web development</li>
-              <li>Software testing</li>
-              <li>Help desk support</li>
+        <div class="intro">
+          <div class="intro-left" id="introLeft">
+            <p>I am a <span id="myIntro">programmer</span>.<br>I have always had my heart set on technology, always facinated by how wonderful machines work and how magical applications are.<br>Having a career in tech is a dream come true for me, and I will utilize any chance given to me very well.</p>
+            <ul id="contactInfoLinksTop">
+              <li><a href="https://github.com/bit-worm"><img src="icons/github.png" id="githubIcon"></a></li>
+              <li><a href="https://x.com/bit_worm_"><img src="icons/twitter.png" id="xIcon"></a></li>
+              <li><a href="https://www.linkedin.com/in/boniface-sitati-z11"><img src="icons/linkedin.png" id="linkedinIcon"></a></li>
+              <li><a href="https://wa.me/+254707592157"><img src="icons/whatsapp.png" id="whatsappIcon"></a></li>
+              <li><a href="mailto:bonifacewafula005@gmail.com"><img src="icons/email.png" id="emailIcon"></a></li>
             </ul>
+          </div> <!--intro-left--> 
+          <div class="intro-right" id="introRight">
+           <img id="me" src="images/dp.jpg" alt="dp">
+          </div> <!--intro-right-->
+        </div> <!--intro-->
+        <div class="skills">
+          <h2>Skills</h2>
+          <h4>Hard skills</h4>
+          <div class="hard-skills">
+            <div class="technical-skills">
+              <h5>Technical Skills</h5>
+              <img src="images/laptop-1478822_1920.jpg" alt="work">
+              <ul id="hardSkillsList">
+                <li>Programming</li>
+                <li>Bug hunting</li>
+                <li>FullStack Web development</li>
+                <li>Software testing</li>
+                <li>Help desk support</li>
+              </ul>
+            </div> <!--technical-skills-->
             <div class="tech-stack">
               <h5>Tech Stack</h5>
+              <img src="images/robot-8449206_1920.jpg" alt="tech-stack">
               <ul id="techStackList">
                 <li>Python</li>
                 <li>Java</li>
@@ -62,8 +74,9 @@
               </ul>
             </div> <!--tech-stack-->
           </div> <!--hard-skills-->
+          <hr>
+          <h4>Soft skills</h4>
           <div class="soft-skills">
-            <h4>Soft skills</h4>
             <div class="strengths">
               <h4>Strengths</h4>
               <ul id="strengthsList">
@@ -75,7 +88,7 @@
                 <li>Good leadership skills</li>
               </ul>             
             </div> <!--strengths-->
-            <div class="Weakness">
+            <div class="weakness">
               <h4>Weakness</h4>
               <ul id="weaknessList">
                 <li>Perfectionist</li>
@@ -154,16 +167,22 @@
         </div> <!--get-in-touch-form-->
         <div class="contact-info">
           <ul id="contactInfoLinks">
-            <li><a href="https://github.com/bit-worm">GitHub</a></li>
-            <li><a href="https://x.com/bit_worm_">X(twitter)</a></li>
-            <li><a href="https://www.linkedin.com/in/boniface-sitati-z11">LinkedIn</a></li>
-            <li><a href="https://wa.me/+254707592157">WhatsApp</a></li>
-            <li><a href="mailto:bonifacewafula005@gmail.com">bonifacewafula005@gmail.com</a></li>
+            <li><a href="https://github.com/bit-worm"><img src="icons/github.png" id="githubIcon"> GitHub</a></li>
+            <li><a href="https://x.com/bit_worm_"><img src="icons/twitter.png" id="xIcon"> X(twitter)</a></li>
+            <li><a href="https://www.linkedin.com/in/boniface-sitati-z11"><img src="icons/linkedin.png" id="linkedinIcon"> LinkedIn</a></li>
+            <li><a href="https://wa.me/+254707592157"><img src="icons/whatsapp.png" id="whatsappIcon"> WhatsApp</a></li>
+            <li><a href="mailto:bonifacewafula005@gmail.com"><img src="icons/email.png" id="emailIcon" >Email</a></li>
           </ul>
         </div> <!--contact-info-->
       </section> <!--get-in-touch-->
     </main>
     <footer>
+      <ul id="myContactsList">
+        <li>Phone: +254707592157</li>
+        <li>Email: bonifacewafula005@gmail.com</li>
+        <li>Location: Kenya</li>
+      </ul>
+      <hr>
       <p>&copy; 2025</p>
     </footer>
     <script src="scripts/script.js"></script>

@@ -32,11 +32,22 @@ navMenu.querySelectorAll('a').forEach(link => {
     });
 });
 
+const introLeft = document.getElementById("introLeft");
+const introRight = document.getElementById("introRight");
+
 // Responsive behavior
 function checkScreenSize() {
     if (window.innerWidth > 768) {
         navMenu.classList.remove('show');
         navToggle.classList.remove('active');
+    }
+    if (window.innerWidth < 620) {
+        introLeft.classList.remove("intro-left");
+        introRight.classList.remove("intro-right");
+    }
+    else {
+        introLeft.classList.add("intro-left");
+        introRight.classList.add("intro-right");
     }
 }
 
@@ -70,6 +81,7 @@ function scrollFunction() {
     header.style.borderBottomLeftRadius = "10px";
     header.style.borderTopRightRadius = "0px";
     header.style.borderTopLeftRadius = "0px";
+    header.style.backgroundColor = "#8e9aaf";
       if (window.matchMedia("(max-width: 505px)").matches) {
         //topRight.style.top = "100px";
         //topRight.style.right = "10px";
@@ -88,6 +100,7 @@ function scrollFunction() {
     header.style.left = "10px";
     header.style.right = "10px";
     header.style.borderRadius = "10px";
+    header.style.backgroundColor = "";
       if (window.matchMedia("(max-width: 505px)").matches) {
         //topRight.style.top = "100px";
         //topRight.style.right = "10px";
@@ -98,3 +111,13 @@ function scrollFunction() {
       }
   }
 }
+
+// changing words in the about me section
+var me = ["programmer", "bug hunter", "fullstack developer", "software tester", "IT help desk agent"];
+var index = 0;
+
+setInterval(function() {
+  document.getElementById("myIntro").innerHTML = me[index];
+  index = (index + 1) % me.length;
+  
+}, 2000);
