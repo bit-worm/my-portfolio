@@ -118,6 +118,8 @@ h1 {
   font-style: italic;
 }
 
+
+/*----------------------------------*/
 /* about me section */
 .intro {
   padding: 15px;
@@ -429,12 +431,69 @@ h1 {
     border-radius: 10px;
 }
 
-
 /* hobbies part */
-
 /* about me section */
 
+/*----------------------------------*/
 
+/* my-work section */
+
+.my-work {
+  /*background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);*/
+  margin: 20px;
+  margin-bottom: 0;
+  /*border-top-left-radius: 15px;
+  border-top-right-radius: 15px;*/
+  padding: 20px;
+/*  column-count: 3;*/
+  display: flex;
+}
+
+.my-work p {
+  display: inline-block;
+  overflow: hidden;
+}
+.my-work a {
+  color: #D91656;
+  font-size: 18px;
+  font-style: italic;
+}
+#my-work h2 {
+  /*column-span: all;*/
+  text-align: center;
+  font-family: 'Courier New', monospace;
+  font-size: 30px;
+}
+
+.hef-layout,
+.cpp-basics,
+.my-portfolio{
+  border: 3px solid #FFF085;
+  border-radius: 15px;
+  background-color: #FCB454;
+  box-shadow: 5px 5px 20px #FF9B17;
+  padding: 10px;
+  margin: 15px;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size: 17px;
+}
+.hef-layout h5,
+.cpp-basics h5,
+.my-portfolio h5 {
+  text-align: center;
+  font-family: 'Courier New', monospace;
+  font-size: 22px;
+}
+.hef-layout:hover,
+.cpp-basics:hover,
+.my-portfolio:hover {
+  box-shadow: 5px 5px 100px #FF9B17;
+}
+
+
+/* my-work section */
+
+/*----------------------------------*/
 #contactInfoLinks {
   display: flex;
   flex-direction: column;
@@ -617,7 +676,8 @@ h1 {
 @media screen and (max-width: 420px) {
   .intro,
   .skills,
-  .education {
+  .education,
+  .my-work {
     margin-right: 2px;
     margin-left: 2px;
   }
@@ -632,6 +692,11 @@ h1 {
   #me {
     width: 70%;
     height: auto;
+  }
+}
+@media screen and (max-width: 800px){
+  .my-work {
+    display: block;
   }
 }
 
