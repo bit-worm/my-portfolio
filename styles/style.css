@@ -126,8 +126,7 @@ h1 {
   overflow: hidden;
   margin: 20px;
   margin-bottom: 0;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
+  border-radius: 15px;
   background-image: url("../images/cool-background-css-gradient.png");
 }
 .intro-left {
@@ -197,7 +196,6 @@ h1 {
 
 .skills {
   padding: 15px;
-  background-image: url(../images/cool-background.png);
   margin: 20px;
   margin-top: 0;
   margin-bottom: 0;
@@ -326,8 +324,7 @@ h1 {
   padding: 15px;
   margin-left: 20px;
   margin-right: 20px;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-radius: 15px;
 }
 
 .formal-edu {
@@ -402,7 +399,6 @@ h1 {
 /* hobbies part */
 
 .hobbies {
-  background-image: url("../images/pexels-vlado-paunovic-1567547-3038740.jpg");
   margin: 20px;
   border-radius: 15px;
   padding: 30px;
@@ -439,7 +435,6 @@ h1 {
 /* my-work section */
 
 .my-work {
-  /*background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);*/
   margin: 20px;
   margin-bottom: 0;
   /*border-top-left-radius: 15px;
@@ -494,15 +489,90 @@ h1 {
 /* my-work section */
 
 /*----------------------------------*/
+
+/* get-in-touch section */
+.contact-container {
+  margin: 20px;
+  padding: 15px;
+  overflow: hidden;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+}
+.get-in-touch-form,
+.contact-info {
+  padding: 15px;
+}
+#getInTouchForm {
+  border: 3px groove #C9B194;
+  box-shadow: 5px 5px 20px #706D54;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+#getInTouchForm legend {
+  font-style: bold;
+  font-family: Georgia, serif;
+  font-size: 30px; 
+}
+#getInTouchForm input,
+#getInTouchForm label {
+  margin: 10px;
+
+}
+
+#getInTouchForm input {
+  border-radius: 10px;
+  border-radius: 3px solid #706D54;
+  padding: 5px;
+}
+
+#submit {
+  background-color: #77B0AA;
+  box-shadow: 3px 3px 60px #135D66;
+  text-align: center;
+  min-width: 100px;
+  margin-left: 50px;
+  margin-right: 50%;
+}
+#message {
+  min-height: 100px;
+  min-width: 90%;
+}
+
+.contact-info {
+  align-items: center;
+}
+
 #contactInfoLinks {
-  display: flex;
-  flex-direction: column;
   list-style-type: none;
+  display: flex;
+  justify-content: space-between;
 }
 #contactInfoLinks img {
   display: inline;
   vertical-align: middle; /* keeps the icons and txt in same level*/
 }
+
+/* get-in-touch section */
+
+/*----------------------------------*/
+
+/*footer*/
+footer {
+  margin: 0px;
+  padding: 15px;
+}
+#myContactsList {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+footer p {
+  text-align: center;
+}
+
+/*footer*/
 
 /* responsive design */
 @media screen and (max-width: 505px){
@@ -699,7 +769,23 @@ h1 {
     display: block;
   }
 }
-
+@media screen and (max-width: 506px){
+  #getInTouchForm {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+@media screen and (max-width: 390px){
+  #getInTouchForm {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+@media screen and (max-width: 545px) {
+  #myContactsList {
+    display: block;
+  }
+}
 
 /* Animations */
 @keyframes fadeIn {
