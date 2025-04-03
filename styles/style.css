@@ -9,7 +9,15 @@ body {
 a {
   text-decoration: none;
 }
-
+p a {
+  color: #00A9FF;
+  font-size: 18px;
+  font-weight: bold;
+}
+p a:hover {
+  font-size: 20px;
+  transition: all 0.5s ease;
+}
 
 
 header {
@@ -112,11 +120,12 @@ h1 {
 
 /* about me section */
 .intro {
-  /*background-color: #c9a6c3;*/
   padding: 15px;
   overflow: hidden;
-  margin: 10px;
-  border-radius: 5px;
+  margin: 20px;
+  margin-bottom: 0;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
   background-image: url("../images/cool-background-css-gradient.png");
 }
 .intro-left {
@@ -185,10 +194,11 @@ h1 {
 }
 
 .skills {
-  padding: 5px;
+  padding: 15px;
   background-image: url(../images/cool-background.png);
   margin: 20px;
-  border-radius: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .hard-skills {
@@ -302,7 +312,125 @@ h1 {
 /* soft-skills part */
 
 /* education part */
+.education h3,
+.education h4 {
+  text-align: center;
+  font-family: 'Courier New', monospace;
+  font-size: 20px;
+}
+
+.education {
+  background-image: url("../images/Meridian.png");
+  padding: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.formal-edu {
+  display: flex;
+  column-count: 3;
+  column-gap: 10px;
+}
+.formal-edu p {
+  display: inline-block;
+  overflow: hidden;
+}
+.formal-edu legend {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#primarySchool,
+#secondarySchool,
+#university {
+  border: 3px groove #003285;
+  box-shadow: 5px 5px 20px #060047;
+}
+#primarySchool:hover,
+#secondarySchool:hover,
+#university:hover {
+  box-shadow: 5px 5px 100px #060047;
+}
+#university a {
+  color: #00A9FF;
+  font-size: 18px;
+  font-weight: bold;
+}
+#university a:hover {
+  font-size: 20px;
+  transition: all 0.5s ease;
+}
+
+#inAddition {
+  border: 3px groove #16C47F;
+  box-shadow: 5px 5px 20px #00FF9C;
+}
+#inAddition:hover {
+  box-shadow: 5px 5px 100px #00FF9C; 
+}
+#inAddition legend {
+  font-weight: bold;
+  font-size: 20px;
+}
+#inAddition p {
+  display: inline-block;
+  overflow: hidden;
+}
+#inAddition ul {
+  list-style-type: none;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+#inAddition li {
+  background-color: #B03052;
+  border-radius: 15px;
+  padding: 7px;
+  margin: auto;
+}
+#sitesList a {
+  color: #EBE8DB;
+}
+
 /* education part */
+
+/* hobbies part */
+
+.hobbies {
+  background-image: url("../images/pexels-vlado-paunovic-1567547-3038740.jpg");
+  margin: 20px;
+  border-radius: 15px;
+  padding: 30px;
+}
+.hobbies h4 {
+  text-align: center;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 30px;
+}
+
+.hobbies ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    overflow: scroll;
+	  overflow-y: hidden !important;
+	  white-space: nowrap;
+	  -webkit-overflow-scrolling: touch;
+}
+.hobbies li {
+    margin-right: 8px;
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+
+/* hobbies part */
 
 /* about me section */
 
@@ -469,6 +597,41 @@ h1 {
   .soft-skills {
     display: inline;
     column-count: 0;
+  }
+  .formal-edu {
+    display: inline;
+    column-count: 0;
+  }
+  #primarySchool,
+  #secondarySchool,
+  #university {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 444px) {
+  #inAddition ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .intro,
+  .skills,
+  .education {
+    margin-right: 2px;
+    margin-left: 2px;
+  }
+}
+@media screen and (max-width: 820px){
+  #me {
+    width: 90%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 360px){
+  #me {
+    width: 70%;
+    height: auto;
   }
 }
 

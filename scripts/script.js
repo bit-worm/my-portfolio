@@ -121,3 +121,8 @@ setInterval(function() {
   index = (index + 1) % me.length;
   
 }, 2000);
+
+window.onload = function() {
+  checkScreenSize();
+  scrollFunction();
+};
