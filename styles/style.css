@@ -127,7 +127,6 @@ h1 {
   margin: 20px;
   margin-bottom: 0;
   border-radius: 15px;
-  background-image: url("../images/cool-background-css-gradient.png");
 }
 .intro-left {
   float: left;
@@ -186,7 +185,6 @@ h1 {
   padding: 5px;
   margin: auto;
   margin-bottom: 4px;
-  box-shadow: 5px 5px 100px #8B5DFF;
   font-family: 'Courier New', monospace;
 }
 
@@ -320,7 +318,6 @@ h1 {
 }
 
 .education {
-  background-image: url("../images/Meridian.png");
   padding: 15px;
   margin-left: 20px;
   margin-right: 20px;
