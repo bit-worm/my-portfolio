@@ -1,7 +1,11 @@
 # Boniface Sitati
 - A website that describes me to people. Gives them a sense of who I am.
 
-Click here 👉️ [**<img src="icons/click-here.png" width="70" height="50" alt="My Site">**](https://boniface-sitati.netlify.app/) to launch the site.
+Click here 👇️
+
+[**<img src="icons/click-here.png" width="100" height="auto" alt="My Site">**](https://boniface-sitati.netlify.app/)
+
+to launch the site.
 
 # ⚒️ Building
 
