@@ -62,6 +62,8 @@ header {
 .top-right a {
   background-color: #ced4da;
   margin: 2px;
+  border-radius: 20px;
+  padding: 3px;
 }
 
 .top-right a:hover {
@@ -74,10 +76,6 @@ header {
 
 .top-right {
   float: right;
-}
-
-.top-right a{
-  border-radius: 20px;
 }
 
 .top-right ul {
@@ -614,7 +612,11 @@ footer p {
   }
 
   .top-right-scrolled a{
+    background-color: #ced4da;
+    margin: 2px;
     border-radius: 20px;
+    padding: 3px;
+	  
   }
   .top-nav {
     display: flex;
