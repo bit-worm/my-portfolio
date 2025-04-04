@@ -770,6 +770,10 @@ footer p {
 @media screen and (max-width: 545px) {
   #myContactsList {
     display: block;
+    text-align: center;
+  }
+  #myContactsList li {
+    margin-top: 10px;
   }
 }
 
