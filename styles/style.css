@@ -26,7 +26,7 @@ header {
   left: 10px;
   right: 10px;
   padding: 2px 0;
-  max-height: 60px;
+  min-height: 60px;
   border-radius: 10px;
   transition: all 0.7s ease;
 }
@@ -35,42 +35,41 @@ header {
   width: 30px;
   height: auto;
   border-radius: 120px;
-  margin: 3px 0;
+  margin: 3px;
   border: 2px solid #5EA2EB;
   display: inline-block;
-  /*vertical-align: bottom;*/
 }
 
 .top-nav {
-/*  background-color: grey;*/
   overflow: hidden;
   display: inline;
 }
 
 .top-nav a {
   float: left;
-  color: #f2f2f2;
+  color: #c369ed;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
   transition: color 0.3s ease;
   margin: 0rem;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: bold;
   max-height: 16px;
 }
 
 .top-right a {
-  background-color: #8e9aaf;
+  background-color: #ced4da;
   margin: 2px;
 }
 
 .top-right a:hover {
-  background-color: #219ebc;
+  background-color: #8a95aa;
+  color: #00A9FF;
 }
-.top-right a:active {
-  background-color: #14213d;
+.top-right a:focus {
+  background-color: #485b82;
 }
 
 .top-right {
@@ -83,7 +82,10 @@ header {
 
 .top-right ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
   display: flex;
+  justify-content: space-between; /* or space-around, space-evenly, flex-start, flex-end*/
 }
 
 /* Toggle button styles */
@@ -588,22 +590,23 @@ footer p {
   }
   .top-nav-scrolled a {
     float: left;
-    color: #f2f2f2;
+    color: #c369ed;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
     transition: color 0.3s ease;
     margin: 0rem;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
     max-height: 16px;
   }
   .top-right-scrolled a:hover {
-    background-color: #219ebc;
+    background-color: #8a95aa;
+    color: #00A9FF;
   }
   .top-right-scrolled a:active {
-    background-color: #14213d;
+    background-color: #485b82;
   }
 
   .top-right-scrolled {
@@ -642,7 +645,7 @@ footer p {
     min-height: 150px;
     top: 40px;
     right: -290px;
-    background-color: #8e9aaf;
+    background-color: #ced4da;
     padding: 1rem;
     width: 250px;
     transition: right 0.5s ease;

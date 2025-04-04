@@ -81,7 +81,7 @@ function scrollFunction() {
     header.style.borderBottomLeftRadius = "10px";
     header.style.borderTopRightRadius = "0px";
     header.style.borderTopLeftRadius = "0px";
-    header.style.backgroundColor = "#8e9aaf";
+    header.style.backgroundColor = "#ced4da";
       if (window.matchMedia("(max-width: 505px)").matches) {
         //topRight.style.top = "100px";
         //topRight.style.right = "10px";
