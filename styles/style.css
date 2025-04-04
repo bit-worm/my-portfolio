@@ -544,8 +544,12 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+#myContactsList li {
+  font-size: 14px;
+}
 footer p {
   text-align: center;
+  font-size: 14px;
 }
 
 /*footer*/
