@@ -61,9 +61,9 @@ header {
 
 .top-right a {
   background-color: #ced4da;
-  margin: 2px;
+  margin: 5px;
   border-radius: 20px;
-  padding: 3px;
+  padding-top: 5px;
 }
 
 .top-right a:hover {
@@ -613,9 +613,9 @@ footer p {
 
   .top-right-scrolled a{
     background-color: #ced4da;
-    margin: 2px;
+    margin: 5px;
     border-radius: 20px;
-    padding: 3px;
+    padding-top: 5px;
 	  
   }
   .top-nav {
@@ -673,6 +673,7 @@ footer p {
   }
   .top-right ul li a {
     margin: 0;
+    padding: 7px;
   }
   .top-right-scrolled ul li a {
     margin: 0;
