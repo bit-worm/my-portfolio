@@ -1,7 +1,7 @@
 # Boniface Sitati
 - A website that describes me to people. Gives them a sense of who I am.
 
-Click here -- to launch the site.
+Click here 👉️ [My Site](https://boniface-sitati.netlify.app/) to launch the site.
 
 # ⚒️ Building
 
@@ -9,7 +9,7 @@ Click here -- to launch the site.
 
 - This web app shows the use of CSS styling to beautify a site and JavaScript to give it functionality.
 
-- The app is hosted on *netlify* a free hosting site with *forms* support.
+- The app is hosted on **[netlify](https://www.netlify.com/)** a free hosting site with `forms` support.
 
 - This project took 3 days, it had me up late at night trying to figure out CSS 😄
 
@@ -17,23 +17,26 @@ Click here -- to launch the site.
 
 - The app will get more updates with time as I grow my knowledge.
 
-# 👏 Honorable menstions
+# 👏 Honorable mentions
 
-- W3Schools
+- [**W3Schools**](https://www.w3schools.com/)
 
-- GeekForGeeks
+- [**GeeksForGeeks**](https://www.geeksforgeeks.org/)
 
-- StackOverflow
+- [**Stack Overflow**](https://stackoverflow.com/)
 
-- BraveAi
+- [**Brave Leo**](https://brave.com/leo/)
 
 # 📥️ Contact me
 
 📞 +254707592157
+
 📬️ bonifacewafula005@gmail.com
+
 🌍️ Kenya
 
 # 👥 Socials
 
-https://x.com/bit_worm_
-https://www.linkedin/in/boniface-sitati-z11
+[**X(twitter**](https://x.com/bit_worm_)
+
+[**LinkedIn**](https://www.linkedin/in/boniface-sitati-z11)
