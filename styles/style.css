@@ -297,14 +297,14 @@ h1 {
   padding: 20px;
   display: flex;
   column-count: 2;
+  column-gap: 20%;
 }
 
 .weakness,
 .strengths {
-  background-color: #003285;
   padding: 10px;
   border-radius: 10px;
-  margin: 20px;
+  margin: 10px;
 }
 
 .strengths li,
@@ -774,6 +774,11 @@ footer p {
   }
   #myContactsList li {
     margin-top: 10px;
+  }
+}
+@media screen and(max-width: 896px){
+  .soft-skills {
+    column-gap: 2px;
   }
 }
 
