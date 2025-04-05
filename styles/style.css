@@ -505,6 +505,10 @@ h1 {
   margin-left: 50px;
   margin-right: 50%;
 }
+#submit:hover {
+  cursor: pointer;
+}
+
 #message {
   min-height: 100px;
   min-width: 90%;
