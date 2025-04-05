@@ -238,7 +238,7 @@ h1 {
   margin: auto;
   margin-left: 2px;
   padding: 15px;
-  box-shadow: 5px 5px 50px #A66CFF;
+  box-shadow: 2px 2px 20px #A66CFF;
 }
 
 .technical-skills img {
@@ -273,7 +273,7 @@ h1 {
   margin: auto;
   margin-left: 2px;
   padding: 15px;
-  box-shadow: 5px 5px 50px #A66CFF;
+  box-shadow: 2px 2px 20px #A66CFF;
 }
 
 .tech-stack img {
@@ -369,7 +369,7 @@ h1 {
   box-shadow: 5px 5px 10px #00FF9C;
 }
 #inAddition:hover {
-  box-shadow: 5px 5px 60px #00FF9C; 
+  box-shadow: 5px 5px 30px #00FF9C; 
 }
 #inAddition legend {
   font-weight: bold;
