@@ -558,7 +558,7 @@ footer p {
 /*footer*/
 
 /* responsive design */
-@media screen and (max-width: 505px){
+@media screen and (max-width: 650px){
   .top-nav-scrolled {
   /*  background-color: grey;*/
     overflow: hidden;
