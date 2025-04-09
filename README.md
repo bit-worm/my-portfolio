@@ -41,6 +41,6 @@
 
 # 👥 Socials
 
-[**X(twitter**](https://x.com/bit_worm_)
+[**X(twitter)**](https://x.com/bit_worm_)
 
 [**LinkedIn**](https://www.linkedin/in/boniface-sitati-z11)
