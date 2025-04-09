@@ -41,7 +41,7 @@ function checkScreenSize() {
         navMenu.classList.remove('show');
         navToggle.classList.remove('active');
     }
-    if (window.innerWidth < 620) {
+    if (window.innerWidth < 824) {
         introLeft.classList.remove("intro-left");
         introRight.classList.remove("intro-right");
     }
